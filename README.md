@@ -1,4 +1,46 @@
 # MapsApp
+Aplicacion web desarrollada en Angular
+
+ # Funcionalidad
+ * La aplicación permite crear mapas, poner marcadores, moverlos, borralos, etc usando Google Maps.
+ 
+ # Lo que aprendí
+ * Cómo usar Google Maps en un proyecto de Angular.
+ * Cómo agrupar información en un módulo personalizado.
+ * Cómo usar Recative Forms - Form Builder.
+ * Cómo crear marcadores en el mapa.
+ * Eventos e interacciones con los mapas.
+ * Edición de marcadores.
+ * Uso de Angular Material en el proyecto:
+    * Dialogs.
+    * Snacks.
+    * Inputs.
+    * Toolbars.
+    * Themes, etc.
+
+  ------------------------------------------------------------
+ # MapsApp
+ Web application developed in Angular
+
+ # Functionality
+ * The application allows you to create maps, put markers, move them, delete them, etc. using Google Maps..
+
+ # What I Learned
+ * How to use Google Maps in an Angular project.
+ * How to group information in a custom module.
+ * How to use Recative Forms - Form Builder.
+ * How to create markers on the map.
+ * Events and interactions with maps.
+ * Bookmark editing..
+ * How to use Angular Material in the project:
+    * Dialogs.
+    * Snacks.
+    * Inputs.
+    * Toolbars.
+    * Themes, etc.
+
+
+ ------------------------------------------------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
