@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { MapaComponent } from './components/mapa/mapa.component';
 
+import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsModule } from "@angular/google-maps";
+
 
 
 
@@ -19,7 +22,11 @@ import { MapaComponent } from './components/mapa/mapa.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyChFzhB4wFwzGBPBuNIW2__v2W80on_hcY'
+    }),
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
