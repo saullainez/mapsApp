@@ -54,6 +54,11 @@ export class MapaComponent implements OnInit {
       width: '250px',
       data: {title: marker.title, desc: marker.desc}
     });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      console.log(result);
+    });
   }
 
 }
