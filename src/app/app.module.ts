@@ -9,14 +9,19 @@ import { MapaComponent } from './components/mapa/mapa.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapsModule } from "@angular/google-maps";
+import { MapaEditarComponent } from './components/mapa/mapa-editar.component';
 
 
 
 
 @NgModule({
+  entryComponents: [
+    MapaEditarComponent
+  ],
   declarations: [
     AppComponent,
-    MapaComponent
+    MapaComponent,
+    MapaEditarComponent
   ],
   imports: [
     BrowserModule,
