@@ -17,7 +17,6 @@ export class MapaEditarComponent implements OnInit {
     public dialogRef: MatDialogRef<MapaEditarComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    console.log(data);
     this.forma = fb.group({
       'title': data.title,
       'desc': data.desc
@@ -28,7 +27,7 @@ export class MapaEditarComponent implements OnInit {
   }
 
   saveChanges(){
-    console.log("Algo");
+    this.dialogRef.close(this.forma.value);
   }
 
   onNoClick(): void {

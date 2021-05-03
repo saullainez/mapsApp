@@ -36,11 +36,12 @@ export class MapaComponent implements OnInit {
     this.markers.push(newMarker);
 
     this.storageSave();
+    this.snackBar.open('Marcador agregado', 'Cerrar', { duration: 3000 });
   }
 
   storageSave() {
     localStorage.setItem('markers', JSON.stringify(this.markers));
-    this.snackBar.open('Marcador agregado', 'Cerrar', { duration: 3000 });
+    
   }
 
   deleteMarker(i:number){
@@ -56,9 +57,15 @@ export class MapaComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      console.log(result);
+      if(!result){
+        return;
+      }
+      marker.title = result.title;
+      marker.desc = result.desc;
+      this.storageSave();
+      this.snackBar.open('Marcador actualizado', 'Cerrar', { duration: 3000 });
     });
+
   }
 
 }
